@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQueryUI</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="jquery-ui.min.css">
+  <link rel="stylesheet" href="jquery-ui.theme.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="jquery-ui.min.js"></script>
+  <script src="jquery.ui.touch-punch.min.js"></script>
+  <script src="sub.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>jQueryUIデモ</h1>
+    <div class="title-links">
+      <a href="https://jqueryui.com/">公式ドキュメント</a>
+      <a href="http://js.studio-kingdom.com/jqueryui/">日本語</a>
+    </div>
+    <p>スマホなどのタッチパネルに対応するために<a href="https://github.com/furf/jquery-ui-touch-punch">jQuery UI Touch Punch</a>も入れています</p>
+
+    <div class="uis">
+      <div id="interactions">
+        <h2>Interactions</h2>
+        <section data-name="Draggable" data-ref="http://js.studio-kingdom.com/jqueryui/interactions/draggable">
+          <p class="msg">移動方向指定、並べ順変えるなど、いろいろできる</p>
+          <div class="block">Drag me!</div>
+        </section>
+        <section data-name="Droppable" data-ref="http://js.studio-kingdom.com/jqueryui/interactions/droppable">
+          <div class="dragme block">drag met to the target</div>
+          <div class="target block-l">target</div>
+        </section>
+        <section data-name="Resizable" data-ref="http://js.studio-kingdom.com/jqueryui/interactions/resizable">
+          <div class="block">resize me</div>
+        </section>
+        <section data-name="Selectable" data-ref="http://js.studio-kingdom.com/jqueryui/interactions/selectable">
+          <ol>
+            <li class="ui-widget-content">Item 1</li>
+            <li class="ui-widget-content">Item 2</li>
+            <li class="ui-widget-content">Item 3</li>
+            <li class="ui-widget-content">Item 4</li>
+            <li class="ui-widget-content">Item 5</li>
+            <li class="ui-widget-content">Item 6</li>
+            <li class="ui-widget-content">Item 7</li>
+          </ol>
+        </section>
+        <section data-name="Sortable" data-ref="http://js.studio-kingdom.com/jqueryui/interactions/sortable">
+          <ul>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+          </ul>
+        </section>
+      </div>
+      <div id="widgets">
+        <h2>Widgets</h2>
+        <section data-name="Accordion" data-ref="http://js.studio-kingdom.com/jqueryui/widgets/accordion">
+          <div class="content">
+            <h4>Section 1</h4>
+            <div>
+              <p>
+              Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+              ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+              amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+              odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+              </p>
+            </div>
+            <h4>Section 2</h4>
+            <div>
+              <p>
+              Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+              purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+              velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+              suscipit faucibus urna.
+              </p>
+            </div>
+            <h4>Section 3</h4>
+            <div>
+              <p>
+              Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+              Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+              ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+              lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+              </p>
+              <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+              </ul>
+            </div>
+            <h4>Section 4</h4>
+            <div>
+              <p>
+              Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+              et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+              faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+              mauris vel est.
+              </p>
+              <p>
+              Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section data-name="Autocomplete" data-ref="http://js.studio-kingdom.com/jqueryui/widgets/autocomplete">
+          <label for="proglangs">プログラミング言語: </label>
+          <input id="proglangs">
+        </section>
+        <section data-name="Menu" data-ref="http://js.studio-kingdom.com/jqueryui/widgets/menu">
+          <ul>
+            <li class="ui-state-disabled"><div>Toys (n/a)</div></li>
+            <li><div>Books</div></li>
+            <li><div>Clothing</div></li>
+            <li><div>Electronics</div>
+              <ul>
+                <li class="ui-state-disabled"><div>Home Entertainment</div></li>
+                <li><div>Car Hifi</div></li>
+                <li><div>Utilities</div></li>
+              </ul>
+            </li>
+            <li><div>Movies</div></li>
+            <li><div>Music</div>
+              <ul>
+                <li><div>Rock</div>
+                  <ul>
+                    <li><div>Alternative</div></li>
+                    <li><div>Classic</div></li>
+                  </ul>
+                </li>
+                <li><div>Jazz</div>
+                  <ul>
+                    <li><div>Freejazz</div></li>
+                    <li><div>Big Band</div></li>
+                    <li><div>Modern</div></li>
+                  </ul>
+                </li>
+                <li><div>Pop</div></li>
+              </ul>
+            </li>
+            <li class="ui-state-disabled"><div>Specials (n/a)</div></li>
+            <li>
+              <div>入れ子0</div>
+              <ul>
+                <li>
+                  <div>入れ子1</div>
+                  <ul>
+                    <li>
+                      <div>入れ子2</div>
+                      <ul>
+                        <li>
+                          <div>入れ子3</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section data-name="Selectmenu" data-ref="https://jqueryui.com/selectmenu/">
+          <form>
+            <div id="circle"></div>
+            <fieldset>
+              <label for="radius">Circle radius</label>
+              <select name="radius" id="radius">
+                <option value="50">50px</option>
+                <option value="100">100px</option>
+                <option value="150" selected="selected">150px</option>
+                <option value="200">200px</option>
+                <option value="250">250px</option>
+              </select>
+        
+              <label for="color">Circle color</label>
+              <select name="color" id="color">
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+                <option value="yellow" selected="selected">Yellow</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+              </select>
+            </fieldset>
+          </form>
+        </section>
+
+        <section data-name="Slider" data-ref="http://js.studio-kingdom.com/jqueryui/widgets/slider">
+          <div class="default">
+            <div id="default-slider" style="margin:20px;"></div>
+            <div id="colorpicker">
+              <p class="ui-state-default ui-corner-all ui-helper-clearfix" style="padding:4px; margin: 6px;">
+                <span class="ui-icon ui-icon-pencil" style="float:left; margin:-2px 4px 0 0;"></span>
+                Colorpicker
+              </p>
+               
+              <div id="red"></div>
+              <div id="green"></div>
+              <div id="blue"></div>
+               
+              <div id="swatch" class="ui-widget-content ui-corner-all"></div>
+            </div>
+          </div>
+        </section>
+        <section data-name="Dialog" data-ref="http://js.studio-kingdom.com/jqueryui/widgets/dialog">
+          <div id="dialog1" title="基本的なダイアログ">
+            <div>
+              <h5>dialog1</h5>
+              <p>このダイアログは、リサイズが可能です</p>
+              <p>また、ドラッグすることもできます</p>
+            </div>            
+          </div>
+          <button class="opendialog" data-target="dialog1">ダイアログ1を開く</button>
+          <div id="dialog2" title="基本的なダイアログ">
+            <div>
+              <h5>dialog2</h5>
+              <p>このダイアログは、リサイズが可能です</p>
+              <p>また、ドラッグすることもできます</p>
+            </div>            
+          </div>
+          <button class="opendialog" data-target="dialog2">ダイアログ2を開く</button>
+          <div id="dialog3" title="基本的なダイアログ">
+            <div>
+              <h5>dialog3</h5>
+              <p>このダイアログは、リサイズが可能です</p>
+              <p>また、ドラッグすることもできます</p>
+            </div>            
+          </div>
+          <button class="opendialog" data-target="dialog3">ダイアログ3を開く</button>
+        </section>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <div class="toggles">
+    <div class="color-toggle">
+      <label for="color-toggle">スタイル反転</label>
+      <input type="checkbox" name="color-toggle" id="color-toggle">
+    </div>
+  </div>
+
+  
+</body>
+</html>
